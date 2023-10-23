@@ -1,0 +1,193 @@
+package ec.edu.ups.practica1.test;
+//IMPORTAR PACKAGE CLASES
+import ec.edu.ups.practica1.clases.*;
+//IMPORTAR CLASE Scanner
+import java.util.Scanner;
+
+public class Principal {
+	public static void main(String[] args) {
+		//--------EMPIEZA CLASE ESTUDIANTES--------
+		System.out.println("ESTUDIANTES:");
+		System.out.println("ESTUDIANTE 1");
+		//Generar un mensaje en pantalla que muestre el dato a pedir por consola
+		System.out.println("Nombre:");
+		//Instanciar objeto con ayuda de la clase Scanner, solicitando entrada de consola
+		Scanner entradae1_1=new Scanner(System.in);
+		//Leer la entrada
+		String nombre = entradae1_1.next();
+		
+		//Generar un mensaje en pantalla que muestre el dato a pedir por consola
+		System.out.println("Edad: ");
+		//Instanciar objeto con ayuda de la clase Scanner, solicitando entrada de consola
+		Scanner entradae1_2=new Scanner(System.in);
+		//Leer la entrada
+		int edad= entradae1_2.nextInt();
+		
+		//Generar un mensaje en pantalla que muestre el dato a pedir por consola
+		System.out.println("Identificacion Magica:");
+		//Instanciar objeto con ayuda de la clase Scanner, solicitando entrada de consola
+		Scanner entradae1_3= new Scanner(System.in);
+		//Leer la entrada
+		String identificacion=entradae1_3.nextLine();
+		
+		//Llamar constructor Estudiante, clase Estudiante y asignar parametros
+		Estudiante estudiante1=new Estudiante(nombre, edad, identificacion);
+		System.out.println();		
+		
+		
+		System.out.println("ESTUDIANTE 2");
+		//SE REPITE EXACTAMENTE EL MISMO PROSEDIMIENTO QUE PARA EL ESTUDIANTE 1
+		System.out.println("Nombre:");
+		Scanner entradae2_1=new Scanner(System.in);
+		String nombre2 = entradae2_1.next();
+		
+		System.out.println("Edad: ");
+		Scanner entradae2_2=new Scanner(System.in);
+		int edad2 = entradae2_2.nextInt();
+		
+		System.out.println("Identificacion Magica:");
+		Scanner entradae2_3= new Scanner(System.in);
+		String identificacion2=entradae2_3.nextLine();
+		
+		//Llamar constructor Estudiante, clase Estudiante y asignar parametros
+		Estudiante estudiante2=new Estudiante(nombre2, edad2, identificacion2);
+		System.out.println();
+		
+		
+		
+		System.out.println("ESTUDIANTE 3");
+		//SE REPITE EXACTAMENTE EL MISMO PROCESO QUE EL ESTUDIANTE 1 Y 2
+		System.out.println("Nombre:");
+		Scanner entradae3_1=new Scanner(System.in);
+		String nombre3 = entradae3_1.nextLine();
+		
+		System.out.println("Edad: ");
+		Scanner entradae3_2=new Scanner(System.in);
+		int edad3 = entradae3_2.nextInt();
+		
+		System.out.println("Identificacion Magica:");
+		Scanner entradae3_3= new Scanner(System.in);
+		String identificacion3=entradae3_3.nextLine();
+		
+		//Llamar constructor Estudiante, clase Estudiante y asignar parametros
+		Estudiante estudiante3=new Estudiante(nombre3, edad3, identificacion3);
+		System.out.println();
+		
+		
+		//--------EMPIEZA CLASE PROFESORES--------
+		System.out.println("PROFESORES:");
+		System.out.println("PROFESOR 1:");
+		
+		//Generar un mensaje en pantalla que muestre el dato a pedir por consola
+		System.out.println("Nombre:");
+		//Instanciar objeto con ayuda de la clase Scanner, solicitando entrada de consola
+		Scanner entradap1_1=new Scanner(System.in);
+		//Leer la entrada
+		String nombre4= entradap1_1.nextLine();
+		
+		//Generar un mensaje en pantalla que muestre el dato a pedir por consola
+		System.out.println("Conocimientos:");
+		//Instanciar objeto con ayuda de la clase Scanner, solicitando entrada de consola
+		Scanner entradap1_2=new Scanner(System.in);
+		//Leer la entrada
+		String conocimiento=entradap1_2.nextLine();
+		
+		//Generar un mensaje en pantalla que muestre el dato a pedir por consola
+		System.out.println("Especialidad:");
+		//Instanciar objeto con ayuda de la clase Scanner, solicitando entrada de consola
+		Scanner entradap1_3=new Scanner(System.in);
+		//Leer la entrada
+		String especialidad= entradap1_3.nextLine();
+		
+		//Llamar constructor Profesor, clase Profesor y asignar parametros
+		Profesor profesor1=new Profesor(nombre4,conocimiento,especialidad);
+		System.out.println();
+		
+		//SE REPITE EXACTAMENTE EL MISMO PROCESO QUE EL PROFESOR 1
+		System.out.println("PROFESOR 2:");
+		System.out.println("Nombre:");
+		Scanner entradap2_1=new Scanner(System.in);
+		String nombre5= entradap2_1.nextLine();
+
+		System.out.println("Conocimientos:");
+		Scanner entradap2_2=new Scanner(System.in);
+		String conocimiento2=entradap2_2.nextLine();
+		
+		System.out.println("Especialidad:");
+		Scanner entradap2_3=new Scanner(System.in);
+		String especialidad2= entradap2_3.nextLine();
+		//Llamar constructor Profesor, clase Profesor y asignar parametros
+		Profesor profesor2=new Profesor(nombre5,conocimiento2,especialidad2);
+		System.out.println();
+		
+		//--------EMPIEZA CLASE ASIGNATURAS--------
+		
+		System.out.println("ASIGNATURAS:");
+		System.out.println("ASIGNATURA 1:");
+		
+		//Mostrar el dato que se pedira por consola
+		System.out.println("Nombre:");
+		//Instanciar un objeto usando la clase Scanner, solicitando una entrada de consola
+		Scanner entradaa1_1=new Scanner(System.in);
+		//Esperar a la entrada del usuario
+		String nombre6= entradaa1_1.nextLine();
+		
+		//Generar un mensaje en pantalla que muestre el dato a pedir por consola
+		System.out.println("CODIGO ESPECIAL:");
+		//Instanciar objeto con ayuda de la clase Scanner, solicitando entrada de consola
+		Scanner entradaa1_2=new Scanner(System.in);
+		//Leer la entrada
+		String codigoE= entradaa1_2.nextLine();
+		
+		//Llamar constructor Asignatura, clase Asignatura y asignar parametros
+		Asignatura asignatura1=new Asignatura(nombre6,codigoE);
+		System.out.println();
+		
+		//SE REPITE EXACTAMENTE EL MISMO PROCESO QUE ASIGNATURA 1
+        System.out.println("ASIGNATURA 2:");
+		System.out.println("Nombre:");
+		Scanner entradaa2_1=new Scanner(System.in);
+		String nombre7= entradaa2_1.nextLine();
+		
+		System.out.println("CODIGO ESPECIAL:");
+		Scanner entradaa2_2=new Scanner(System.in);
+		String codigoE2= entradaa2_2.nextLine();
+		
+		//Llamar constructor Asignatura, clase Asignatura y asignar parametros
+		Asignatura asignatura2=new Asignatura(nombre7,codigoE2);
+		System.out.println();
+		
+		///////////////////////////////////////////////////////////////////////
+		
+		//Llamar constructor toString para imprimir los datos de Estudiantes
+		System.out.println("Estudiante 1: ");
+	    System.out.println(estudiante1.toString());
+		System.out.println();
+		System.out.println("Estudiante 2: ");
+		System.out.println(estudiante2.toString());
+		System.out.println();
+		System.out.println("Estudiante 3: ");
+		System.out.println(estudiante3.toString());
+		System.out.println();
+		System.out.println();
+		System.out.println();
+				
+		//Llamar constructor toString para imprimir los datos de Profesores
+		System.out.println("Profesor 1: ");
+		System.out.println(profesor1.toString());
+		System.out.println();
+		System.out.println("Profesor 2: ");
+		System.out.println(profesor2.toString());
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+	    //Llamar constructor toString para imprimir los datos de Asignaturas
+		System.out.println("Asignatura 1: ");
+		System.out.println(asignatura1.toString());
+		System.out.println();
+		System.out.println("Asignatura 2: ");
+		System.out.println(asignatura2.toString());
+	}
+}
+
